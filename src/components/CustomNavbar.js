@@ -36,8 +36,7 @@ const CustomNavbar = () => {
               <Nav.Link onClick={() => handleClick("/about")}> About</Nav.Link>
               <Nav.Link onClick={() => handleClick("/")}> Art</Nav.Link>
               <Nav.Link onClick={() => handleClick("/")}> Blog</Nav.Link>
-              <Nav.Link onClick={() => handleClick("/products")}>
-                {" "}
+              <Nav.Link onClick={() => handleClick("/contact")}>
                 Contact
               </Nav.Link>
             </Nav>

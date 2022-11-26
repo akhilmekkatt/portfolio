@@ -13,6 +13,7 @@ import PreLoader from "./components/PreLoader";
 /* LAZY LOADING */
 const HomeComponent = lazy(() => import("./components/HomeComponent"));
 const AboutPage = lazy(() => import("./pages/about.page"));
+const ContactPage = lazy(() => import("./pages/contact.page"));
 
 const App = () => {
   const pages = [
@@ -26,6 +27,12 @@ const App = () => {
       pageLink: "/about",
       view: AboutPage,
       displayName: "AboutPage",
+      showInNavbar: true,
+    },
+    {
+      pageLink: "/contact",
+      view: ContactPage,
+      displayName: "ContactPage",
       showInNavbar: true,
     },
   ];
