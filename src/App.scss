@@ -1,0 +1,53 @@
+/*! `Custom` Bootstrap 5 theme */
+@import "./styles/variables.scss";
+@import "bootstrap";
+@import "../node_modules/animate.css/animate.min.css";
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  font-smooth: 2em;
+}
+
+body {
+  //font-family: "Times New Roman", Times, serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-size: cover;
+
+  &.dark {
+    --background-color: #120215;
+    --text-color: #efefef;
+  }
+  /* @media (prefers-color-scheme: light) {
+    
+  }
+  @media (prefers-color-scheme: dark) {
+    --background-color: #120215;
+    --text-color: #efefef;
+  } */
+}
+
+* {
+  transition: 0.1s;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Add SASS theme customizations here..
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* text-transform: uppercase; */
+}
+
+.navbar .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}

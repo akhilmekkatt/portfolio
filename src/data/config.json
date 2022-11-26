@@ -1,0 +1,47 @@
+{
+  "pages": [{ "name": "Projects", "sections": [""] }],
+  "career": [
+    {
+      "employer": "IBM India",
+      "from": "2021 JUN 02",
+      "to": "Now",
+      "role": "Senior Systems Analyst",
+      "description": "I was responsible for overhauling the front end part of the legacy system to improve accessibility, HTML, perfomance, CSS (introduced BEM), responsiveness.<br/><br/>      I implemented a rebrand/redesign and created a component based design system in Figma from the page designs as a guide and reference for the engineering team to use and acted as go between from Design / Product to Engineering.   <br/><br/>    I was involved in the migration of the legacy system to NextJS/Typescript/React and SASS adding new components to the ui-library which was becoming our central repository for our UI in Storybook."
+    },
+    {
+      "employer": "Hcl India",
+      "from": "2018 Aug 01",
+      "to": "2021 May 31",
+      "role": "Consultant",
+      "description": ""
+    },
+    {
+      "employer": "Kesdee India",
+      "from": "2018 Aug 01",
+      "to": "2021 May 31",
+      "role": "Software Developer",
+      "description": ""
+    },
+    {
+      "employer": "24x7Learning",
+      "from": "2018 Aug 01",
+      "to": "2021 May 31",
+      "role": "Product Integrator",
+      "description": ""
+    },
+    {
+      "employer": "Kesdee India",
+      "from": "2018 Aug 01",
+      "to": "2021 May 31",
+      "role": "Flash Developer",
+      "description": ""
+    },
+    {
+      "employer": "Aedes Design",
+      "from": "2018 Aug 01",
+      "to": "2021 May 31",
+      "role": "Flash Developer",
+      "description": ""
+    }
+  ]
+}

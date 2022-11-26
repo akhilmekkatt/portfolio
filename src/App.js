@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense, lazy, useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
+/* Custom Style */
+import "./App.scss";
+
+/* components */
+import CustomNavbar from "./components/CustomNavbar";
+import NotFound from "./components/NotFound";
+import { Container } from "react-bootstrap";
+import PreLoader from "./components/PreLoader";
+
+/* LAZY LOADING */
+const HomeComponent = lazy(() => import("./components/HomeComponent"));
+const AboutPage = lazy(() => import("./pages/about.page"));
+
+const App = () => {
+  const pages = [
+    {
+      pageLink: "/",
+      view: HomeComponent,
+      displayName: "HomeComponent",
+      showInNavbar: true,
+    },
+    {
+      pageLink: "/about",
+      view: AboutPage,
+      displayName: "AboutPage",
+      showInNavbar: true,
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <CustomNavbar />
+      <Container>
+        <Suspense fallback={<PreLoader />}>
+          <Routes>
+            {pages.map((page, index) => {
+              return (
+                <Route
+                  path={page.pageLink}
+                  element={<page.view key={index} />}
+                  key={index}
+                />
+              );
+            })}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </Container>
+    </Router>
   );
-}
+};
 
 export default App;
