@@ -34,7 +34,7 @@ const CustomNavbar = () => {
             <Nav className="ms-auto">
               <Nav.Link onClick={() => handleClick("/")}> Home</Nav.Link>
               <Nav.Link onClick={() => handleClick("/about")}> About</Nav.Link>
-              <Nav.Link onClick={() => handleClick("/")}> Art</Nav.Link>
+              <Nav.Link onClick={() => handleClick("/art")}> Art</Nav.Link>
               <Nav.Link onClick={() => handleClick("/")}> Blog</Nav.Link>
               <Nav.Link onClick={() => handleClick("/contact")}>
                 Contact
@@ -48,7 +48,6 @@ const CustomNavbar = () => {
             ></Nav.Link>
 
             <Nav.Link onClick={() => setIsDark(!isDark)}>
-              {" "}
               {isDark ? <FiSun color="yellow" /> : <FiMoon />}
             </Nav.Link>
           </IconContext.Provider>

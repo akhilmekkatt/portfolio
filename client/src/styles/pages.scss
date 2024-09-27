@@ -100,3 +100,12 @@ section {
     border: solid 3px #ff0000b8;
   }
 }
+
+.image-gallery {
+  .image {
+    min-width: 25%;
+    max-width: 25%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+}

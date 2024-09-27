@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
+import Typewriter from "typewriter-effect";
 import "../styles/pages.scss";
 
 const HomeComponent = (props) => {
@@ -12,7 +13,7 @@ const HomeComponent = (props) => {
       curIndex = 0;
       setIndex(curIndex);
     }
-  }, 8000);
+  }, 5000);
 
   /* useEffect(() => {
     console.log(index);
@@ -25,9 +26,17 @@ const HomeComponent = (props) => {
           <h1 className="display-1  animate__animated   animate__zoomIn animate__delay-0.5s">
             Hi I AM Akhil,
           </h1>
-          <h1 className="display-1 text-danger display-1  animate__animated  animate__zoomIn animate__delay-1s">
-            Sometimes I am, <br />
-            {roles[index]}
+          <h1 className="display-1  animate__animated  animate__zoomIn animate__delay-1s">
+            Sometimes I am,
+          </h1>
+          <h1 className="display-1  text-danger  animate__animated  animate__zoomIn animate__delay-1s">
+            <Typewriter
+              options={{
+                strings: roles[index],
+                autoStart: true,
+                loop: false,
+              }}
+            />
           </h1>
         </div>
       </div>

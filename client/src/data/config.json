@@ -1,0 +1,51 @@
+{
+  "pages": [{ "name": "Projects", "sections": [""] }],
+  "career": {
+    "summary": "I am a seasoned Senior Full Stack JavaScript Engineer with over 12+ years of hands-on experience in diverse domains. I am currently on the lookout for a challenging career opportunity in the field of software development, where I can leverage my technical prowess to bring substantial value to my organization.    <br />    HTML(5), CSS(3), LESS, Sass, Angular, Typescript, React, NodeJs, Git,    Openshift, AWS, Agile and so on...",
+
+    "history": [
+      {
+        "employer": "IBM India",
+        "from": "2021 JUN 02",
+        "to": "Now",
+        "role": "Senior Systems Analyst",
+        "description": "I took the lead role in web development at IBM, employing Node.js, Angular, React, and OpenShift technologies. Got ooportunity to lead development team, enhances application performance, ensures security, and collaborates seamlessly to deliver top-quality web solutions."
+      },
+      {
+        "employer": "Hcl India",
+        "from": "2018 Aug 01",
+        "to": "2021 May 31",
+        "role": "Consultant",
+        "description": "I Was deeply involved in a wide range of projects spanning multiple domains. He provided valuable consulting services to clients, offering insights, technical expertise, and innovative solutions. His responsibilities included analyzing client requirements, architecting software solutions, overseeing development teams, and ensuring the successful delivery of projects"
+      },
+      {
+        "employer": "Kesdee India",
+        "from": "2018 Aug 01",
+        "to": "2021 May 31",
+        "role": "Software Developer",
+        "description": "Akhil's role as a Software Developer at Kesdee India involved actively participating in the development of software applications. He contributed to the coding, testing, and deployment of software, collaborating closely with the development team to meet project goals and deadlines. His work played a vital role in the successful completion of various software projects."
+      },
+      {
+        "employer": "24x7Learning",
+        "from": "2018 Aug 01",
+        "to": "2021 May 31",
+        "role": "Product Integrator",
+        "description": "Akhil's role as a Software Developer at Kesdee India involved actively participating in the development of software applications. He contributed to the coding, testing, and deployment of software, collaborating closely with the development team to meet project goals and deadlines. His work played a vital role in the successful completion of various software projects."
+      },
+      {
+        "employer": "Kesdee India",
+        "from": "2018 Aug 01",
+        "to": "2021 May 31",
+        "role": "Flash Developer",
+        "description": "While working as a Flash Developer at Kesdee India, Akhil specialized in developing Flash-based applications and content. His role included designing and coding interactive multimedia elements using Adobe Flash technology. His work contributed to creating engaging and visually appealing user experiences."
+      },
+      {
+        "employer": "Aedes Design",
+        "from": "2018 Aug 01",
+        "to": "2021 May 31",
+        "role": "Flash Developer",
+        "description": ""
+      }
+    ]
+  }
+}

@@ -14,6 +14,7 @@ import PreLoader from "./components/PreLoader";
 const HomeComponent = lazy(() => import("./components/HomeComponent"));
 const AboutPage = lazy(() => import("./pages/about.page"));
 const ContactPage = lazy(() => import("./pages/contact.page"));
+const WorksPage = lazy(() => import("./pages/works.page"));
 
 const App = () => {
   const pages = [
@@ -33,6 +34,12 @@ const App = () => {
       pageLink: "/contact",
       view: ContactPage,
       displayName: "ContactPage",
+      showInNavbar: true,
+    },
+    {
+      pageLink: "/art",
+      view: WorksPage,
+      displayName: "WorksPage",
       showInNavbar: true,
     },
   ];
